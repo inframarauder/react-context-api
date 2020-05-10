@@ -9,7 +9,9 @@ const BookContextProvider = (props) => {
     { title: "Algorithms To Live By", id: 3 },
   ]);
 
-  const addBook = (book) => setBooks(books.push(book));
+  const addBook = (book) => {
+    setBooks([...books, book]);
+  };
   const removeBook = (id) => setBooks(books.filter((book) => book.id !== id));
   return (
     <BookContext.Provider value={{ books, addBook, removeBook }}>

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Book from "./Book";
+import BookForm from "./BookForm";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { BookContext } from "../contexts/BookContext";
 
@@ -18,6 +19,7 @@ const BookList = () => {
           <Book style={{ background: theme.ui }} book={book} key={book.id} />
         ))}
       </ul>
+      <BookForm />
     </div>
   );
 };
