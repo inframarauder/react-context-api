@@ -1,6 +1,5 @@
 import React from "react";
-import ThemeContextProvider from "./contexts/ThemeContext";
-import AuthContextProvider from "./contexts/AuthContext";
+import { AuthContextProvider, ThemeContextProvider } from "./contexts/index";
 import BookList from "./components/BookList";
 import Navbar from "./components/Navbar";
 import ThemeToggler from "./components/ThemeToggler";
